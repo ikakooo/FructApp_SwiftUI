@@ -21,6 +21,7 @@ struct OnboardingView: View {
             } //: LOOP
         } //: TAB
         .tabViewStyle(PageTabViewStyle())
+        .indexViewStyle(PageIndexViewStyle(backgroundDisplayMode: .always))
         .padding(.vertical, 20)
     }
 }
