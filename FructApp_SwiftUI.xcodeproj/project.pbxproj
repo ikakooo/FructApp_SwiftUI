@@ -11,6 +11,8 @@
 		335ACC4C294B211C00AC1B4D /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335ACC4B294B211C00AC1B4D /* StartButtonView.swift */; };
 		335ACC4E294B291200AC1B4D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335ACC4D294B291200AC1B4D /* OnboardingView.swift */; };
 		335ACC50294B2BF700AC1B4D /* FructApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335ACC4F294B2BF700AC1B4D /* FructApp.swift */; };
+		335ACC53294B788C00AC1B4D /* FruitModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335ACC52294B788C00AC1B4D /* FruitModel.swift */; };
+		335ACC56294B7A5E00AC1B4D /* FruitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335ACC55294B7A5E00AC1B4D /* FruitData.swift */; };
 		33FBF522294A4E550077BE57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FBF521294A4E550077BE57 /* Assets.xcassets */; };
 		33FBF525294A4E550077BE57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FBF524294A4E550077BE57 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -20,6 +22,8 @@
 		335ACC4B294B211C00AC1B4D /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
 		335ACC4D294B291200AC1B4D /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		335ACC4F294B2BF700AC1B4D /* FructApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FructApp.swift; sourceTree = "<group>"; };
+		335ACC52294B788C00AC1B4D /* FruitModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitModel.swift; sourceTree = "<group>"; };
+		335ACC55294B7A5E00AC1B4D /* FruitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitData.swift; sourceTree = "<group>"; };
 		33FBF51A294A4E520077BE57 /* FructApp_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FructApp_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33FBF521294A4E550077BE57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33FBF524294A4E550077BE57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -54,6 +58,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		335ACC51294B787100AC1B4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				335ACC52294B788C00AC1B4D /* FruitModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		335ACC54294B7A4200AC1B4D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				335ACC55294B7A5E00AC1B4D /* FruitData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		33FBF511294A4E520077BE57 = {
 			isa = PBXGroup;
 			children = (
@@ -73,6 +93,8 @@
 		33FBF51C294A4E520077BE57 /* FructApp_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				335ACC54294B7A4200AC1B4D /* Data */,
+				335ACC51294B787100AC1B4D /* Model */,
 				335ACC48294B185800AC1B4D /* View */,
 				335ACC47294B182000AC1B4D /* App */,
 				33FBF521294A4E550077BE57 /* Assets.xcassets */,
@@ -161,6 +183,8 @@
 			files = (
 				335ACC50294B2BF700AC1B4D /* FructApp.swift in Sources */,
 				335ACC4A294B188500AC1B4D /* FruitCardView.swift in Sources */,
+				335ACC56294B7A5E00AC1B4D /* FruitData.swift in Sources */,
+				335ACC53294B788C00AC1B4D /* FruitModel.swift in Sources */,
 				335ACC4C294B211C00AC1B4D /* StartButtonView.swift in Sources */,
 				335ACC4E294B291200AC1B4D /* OnboardingView.swift in Sources */,
 			);
@@ -291,6 +315,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FructApp_SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Fructs;
@@ -321,6 +346,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FructApp_SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = Fructs;
