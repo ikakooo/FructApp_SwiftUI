@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33FBF51E294A4E520077BE57 /* FructApp_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FBF51D294A4E520077BE57 /* FructApp_SwiftUIApp.swift */; };
-		33FBF520294A4E520077BE57 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33FBF51F294A4E520077BE57 /* ContentView.swift */; };
+		335ACC4A294B188500AC1B4D /* FruitCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335ACC49294B188500AC1B4D /* FruitCardView.swift */; };
+		335ACC4C294B211C00AC1B4D /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335ACC4B294B211C00AC1B4D /* StartButtonView.swift */; };
+		335ACC4E294B291200AC1B4D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335ACC4D294B291200AC1B4D /* OnboardingView.swift */; };
+		335ACC50294B2BF700AC1B4D /* FructApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335ACC4F294B2BF700AC1B4D /* FructApp.swift */; };
 		33FBF522294A4E550077BE57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FBF521294A4E550077BE57 /* Assets.xcassets */; };
 		33FBF525294A4E550077BE57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33FBF524294A4E550077BE57 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		335ACC49294B188500AC1B4D /* FruitCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitCardView.swift; sourceTree = "<group>"; };
+		335ACC4B294B211C00AC1B4D /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		335ACC4D294B291200AC1B4D /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		335ACC4F294B2BF700AC1B4D /* FructApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FructApp.swift; sourceTree = "<group>"; };
 		33FBF51A294A4E520077BE57 /* FructApp_SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FructApp_SwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		33FBF51D294A4E520077BE57 /* FructApp_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FructApp_SwiftUIApp.swift; sourceTree = "<group>"; };
-		33FBF51F294A4E520077BE57 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		33FBF521294A4E550077BE57 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33FBF524294A4E550077BE57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -32,6 +36,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		335ACC47294B182000AC1B4D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				335ACC4D294B291200AC1B4D /* OnboardingView.swift */,
+				335ACC4F294B2BF700AC1B4D /* FructApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		335ACC48294B185800AC1B4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				335ACC49294B188500AC1B4D /* FruitCardView.swift */,
+				335ACC4B294B211C00AC1B4D /* StartButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		33FBF511294A4E520077BE57 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +73,8 @@
 		33FBF51C294A4E520077BE57 /* FructApp_SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				33FBF51D294A4E520077BE57 /* FructApp_SwiftUIApp.swift */,
-				33FBF51F294A4E520077BE57 /* ContentView.swift */,
+				335ACC48294B185800AC1B4D /* View */,
+				335ACC47294B182000AC1B4D /* App */,
 				33FBF521294A4E550077BE57 /* Assets.xcassets */,
 				33FBF523294A4E550077BE57 /* Preview Content */,
 			);
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33FBF520294A4E520077BE57 /* ContentView.swift in Sources */,
-				33FBF51E294A4E520077BE57 /* FructApp_SwiftUIApp.swift in Sources */,
+				335ACC50294B2BF700AC1B4D /* FructApp.swift in Sources */,
+				335ACC4A294B188500AC1B4D /* FruitCardView.swift in Sources */,
+				335ACC4C294B211C00AC1B4D /* StartButtonView.swift in Sources */,
+				335ACC4E294B291200AC1B4D /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,11 +293,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FructApp_SwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Fructs;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,11 +323,13 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FructApp_SwiftUI/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Fructs;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
