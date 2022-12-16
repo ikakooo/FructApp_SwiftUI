@@ -16,8 +16,10 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             List(fruits.shuffled()) { fruit in
-                FruitRowView(fruit: fruit)
-                    .padding(.vertical, 8)
+                NavigationLink(destination: FruitDetailedView(fruit: fruit)){
+                    FruitRowView(fruit: fruit)
+                        .padding(.vertical, 8)
+                }
             }
             .navigationTitle("Fruits")
         }
