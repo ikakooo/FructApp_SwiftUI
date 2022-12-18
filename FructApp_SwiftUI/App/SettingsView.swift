@@ -35,7 +35,22 @@ struct SettingsView: View {
                                 .font(.footnote)
                         }
                     }
+                    // MARK: - SECTION 2
                     
+                    
+                    // MARK: - SECTION 3
+                    
+                    GroupBox(label: HStack{
+                        Text("Application".uppercased()).fontWeight(.bold)
+                        Spacer()
+                        Image(systemName: "apps.iphone")
+                    }){
+                        SettingRowView(name: "Developer", content: "ikakooo")
+                        SettingRowView(name: "Designer", content: "ikakooo")
+                        SettingRowView(name: "Compatibility", content: "iOS 15")
+                        SettingRowView(name: "Github", linkLabel: "Profile", linkDestination: "github.com/ikakooo")
+                        SettingRowView(name: "Version", content: "1.0.0")
+                    }
                     
                 }
                 .navigationBarTitle(Text("Settings"), displayMode: .large)
