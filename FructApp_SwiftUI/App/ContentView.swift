@@ -35,7 +35,8 @@ struct ContentView: View {
                         SettingsView(isPresented: $isShowingSettings)
                     }
             )
-        }
+        }// MARK: NAVIGATION
+        .navigationViewStyle(StackNavigationViewStyle())
     }
 }
 
